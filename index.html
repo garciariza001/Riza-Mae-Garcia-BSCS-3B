@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fork & Spoon Restaurant</title>
+    <link rel="stylesheet" href="css/boostrap.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <img src="images/logo.jpg" alt="Fork & Spoon Logo" class="logo" />
+      <a class="navbar-brand" href="#">Fork & Spoon</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://foodthribe.github.io/foodthribe-landing-page/index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://foodthribe.github.io/foodthribe-landing-page/home.html"
+              >Members</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Welcome to Fork & Spoon</h1>
+      <p>Your favorite spot for fresh, delicious meals</p>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container">
+      <!-- Food Items Grid -->
+      <div class="row g-4 food-grid">
+        <!-- Food Item 1 -->
+        <div class="col-md-4">
+          <div class="food-item">
+            <img
+              src="images/Classic Cheeseburger.webp"
+              alt="Classic Cheeseburger"
+            />
+            <div class="food-details">
+              <div class="food-name">Classic Cheeseburger</div>
+              <div class="food-description">
+                A juicy beef patty topped with melted cheese, lettuce, tomato,
+                and pickles.
+              </div>
+              <div class="food-price">₱105</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food Item 2 -->
+        <div class="col-md-4">
+          <div class="food-item">
+            <img src="images/Veggie Burger.webp" alt="Veggie Burger" />
+            <div class="food-details">
+              <div class="food-name">Veggie Burger</div>
+              <div class="food-description">
+                A savory veggie patty with fresh vegetables, cheese, and our
+                special sauce.
+              </div>
+              <div class="food-price">₱120</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food Item 3 -->
+        <div class="col-md-4">
+          <div class="food-item">
+            <img src="images/Chicken Burger.webp" alt="Chicken Burger" />
+            <div class="food-details">
+              <div class="food-name">Chicken Burger</div>
+              <div class="food-description">
+                Crispy chicken breast, lettuce, tomato, and mayo in a toasted
+                bun.
+              </div>
+              <div class="food-price">₱200</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food Item 4 -->
+        <div class="col-md-4">
+          <div class="food-item">
+            <img src="images/Golden Fries.webp" alt="Golden Fries" />
+            <div class="food-details">
+              <div class="food-name">Golden Fries</div>
+              <div class="food-description">
+                Crispy golden fries, served with ketchup or mayo.
+              </div>
+              <div class="food-price">₱79</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food Item 5 -->
+        <div class="col-md-4">
+          <div class="food-item">
+            <img src="images/Chocolate Milkshake.avif" alt="Milkshake" />
+            <div class="food-details">
+              <div class="food-name">Chocolate Milkshake</div>
+              <div class="food-description">
+                A creamy milkshake made with rich chocolate and topped with
+                whipped cream.
+              </div>
+              <div class="food-price">₱99</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food Item 6 -->
+        <div class="col-md-4">
+          <div class="food-item">
+            <img src="images/Cheesecake.webp" alt="Cheesecake" />
+            <div class="food-details">
+              <div class="food-name">Cheesecake</div>
+              <div class="food-description">
+                A creamy cheesecake with a graham cracker crust, topped with
+                fresh strawberries.
+              </div>
+              <div class="food-price">₱59</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <p>&copy; 2024 Fork & Spoon Restaurant | All rights reserved.</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+    <!-- Sidebar Toggle Script -->
+    <script>
+      const sidebarToggle = document.querySelector(".sidebar-toggle");
+      const sidebar = document.getElementById("sidebar");
+
+      sidebarToggle.addEventListener("click", function () {
+        sidebar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
